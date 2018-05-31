@@ -9,17 +9,15 @@ const controls = [
     {label: 'Meat', type: 'meat'}
 ]
 
-const buildControls = (props) => {
-
-    <div className={styles.BuildControls}> 
-    {controls.map(ctrl => (
+const buildControls = (props) => (
+    <div className={styles.BuildControls}>
+       
+        {controls.map(ctrl => (
             <BuildControl 
                 key={ctrl.label} 
-                label={ctrl.label}
-         />
-    ))}
+                label={ctrl.label} />
+        ))}
     </div>
-
-}
+);  
 
 export default buildControls;
