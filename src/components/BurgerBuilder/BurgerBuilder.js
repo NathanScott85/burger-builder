@@ -27,7 +27,7 @@ class BurgerBuilder extends Component {
     updatePurchaseState(ingredients){
         const sum = Object.keys(ingredients)
         .map(igKey => {
-                ingredients[igKey]
+              return ingredients[igKey]
         } )
         .reduce((sum, el) => {
             return sum + el;
